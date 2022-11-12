@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+     <ImageView
+         android:id="@+id/imageview"
+         android:layout_width="100dp"
+         android:layout_height="100dp"
+         android:layout_margin="10dp"
+
+         android:layout_marginTop="112dp"
+         android:scaleType="fitXY"
+         android:src="@drawable/img_1"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.498"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+
+     <Button
+         android:id="@+id/rotatebtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="20dp"
+
+         android:text="rotate"
+         app:layout_constraintEnd_toStartOf="@+id/button"
+         app:layout_constraintHorizontal_bias="0.11"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/imageview" />
+
+     <Button
+         android:id="@+id/button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         android:layout_marginRight="55dp"
+         android:layout_marginTop="20dp"
+         android:text="translate"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/imageview" />
+
+     <Button
+         android:id="@+id/fadein"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="20dp"
+         android:text="fade in "
+
+         app:layout_constraintEnd_toStartOf="@+id/fadeout"
+         app:layout_constraintHorizontal_bias="0.106"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/rotatebtn" />
+
+     <Button
+         android:id="@+id/fadeout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="55dp"
+         android:layout_marginTop="20dp"
+         android:text="fade out "
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+     <Button
+         android:id="@+id/crossfading"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginRight="55dp"
+         android:layout_marginTop="20dp"
+         android:text="cross fading"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+     <Button
+         android:id="@+id/blink"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="20dp"
+         android:text="blink"
+
+         app:layout_constraintEnd_toStartOf="@+id/crossfading"
+         app:layout_constraintHorizontal_bias="0.128"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+     <Button
+         android:id="@+id/button5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="20dp"
+         android:text="zoom in"
+         app:layout_constraintEnd_toStartOf="@+id/button6"
+         app:layout_constraintHorizontal_bias="0.11"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/fadein" />
+
+     <Button
+         android:id="@+id/button6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="zoom out"
+         android:layout_marginRight="55dp"
+         android:layout_marginTop="20dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/fadeout" />
+
+     <Button
+         android:id="@+id/button10"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="20dp"
+         android:text="move"
+         app:layout_constraintEnd_toStartOf="@+id/button8"
+         app:layout_constraintHorizontal_bias="0.091"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+     <Button
+         android:id="@+id/button9"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="20dp"
+         android:text="slide up"
+         app:layout_constraintEnd_toStartOf="@+id/button7"
+         app:layout_constraintHorizontal_bias="0.124"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+     <Button
+         android:id="@+id/button7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="slide down"
+         android:layout_marginRight="55dp"
+         android:layout_marginTop="20dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+     <Button
+         android:id="@+id/button8"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="bounce"
+         android:layout_marginRight="55dp"
+         android:layout_marginTop="20dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="sequential"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="20dp"
+         android:id="@+id/sequential"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/blink" />
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="together"
+         android:id="@+id/together"
+         android:layout_marginRight="55dp"
+         android:layout_marginTop="20dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/crossfading" />
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="next"
+         android:id="@+id/next"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toBottomOf="@+id/sequential" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
